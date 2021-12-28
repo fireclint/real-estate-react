@@ -1,0 +1,70 @@
+.navbar {
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+
+.navbar span {
+    color: #5651e5;
+}
+
+.navbar .nav-menu {
+    display: flex;
+}
+
+.navbar li {
+    padding: 1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar .icon {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:940px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar .nav-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 90px;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba(255,255,255, .98);
+        transition: 0.4s ease-in-out;
+        z-index: 10;
+    }
+
+    .navbar .active {
+        right: 0;
+    }
+
+    .navbar .nav-menu li a {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
